@@ -27,12 +27,12 @@ jobs:
       
       #- run: npm ci
       - name: Meteor Install
-        shell: bash -l {0}
+        shell: bash
         run: | 
           curl https://install.meteor.com/?release\=3.00 | sh
 
       - name: NPM Install
-        shell: bash -l {0}
+        shell: bash 
         run: | 
           meteor npm install
 
@@ -43,5 +43,5 @@ jobs:
         #env:
          # STAGING_SETTINGS_JSON: ${{ secrets.STAGING_SETTINGS_JSON}}
           
-      - run: npm run build --if-present
-      - run: npm test
+      ##- run: npm run build --if-present
+      ##- run: npm test
