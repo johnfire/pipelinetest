@@ -1,0 +1,22 @@
+{
+  "mongo": {
+    "devURL": "mongodb+srv://joedecoolieo:SEoOFrO9aqj3FdHsfbOFJStcnKDgQlVK@cluster0.y0eyo.mongodb.net/mainTestDatabase?retryWrites=true&w=majority"
+  },
+
+  "galaxy.meteor.com": {
+    "env": {
+      "MONGO_URL": "mongodb+srv://joedecoolieo:SEoOFrO9aqj3FdHsfbOFJStcnKDgQlVK@cluster0.y0eyo.mongodb.net/mainTestDatabase?retryWrites=true&w=majority"
+    }
+  },
+  "public": {
+    "packages": {
+      "dynamic-import": {
+        "useLocationOrigin": true
+      }
+    },
+
+    "mocha": {
+      "testFilePath": "/path/to/your/testfile"
+    }
+  }
+}
