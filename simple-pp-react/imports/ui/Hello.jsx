@@ -14,6 +14,7 @@ export const Hello = () => {
       <p> test pipeline mod </p>
       <p> another one </p>
       <p> again 1236</p>
+      <p> again 1239 </p>
     </div>
   );
 };
