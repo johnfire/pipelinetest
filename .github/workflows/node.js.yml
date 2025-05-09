@@ -28,18 +28,20 @@ jobs:
       #- run: npm ci
       - name: Meteor Install
         shell: bash -l {0}
-        run: | curl https://isntall.meteor.com/?release\=3.00 | sh
+        run: | 
+          curl https://install.meteor.com/?release\=3.00 | sh
 
       - name: NPM Install
         shell: bash -l {0}
-        run: | meteor npm install
+        run: | 
+          meteor npm install
 
-      - name: Create SSH Files
-        shell: bash -l {0}
-        run : | mkdir .delploy
-               echo "$STAGING_SETTTINGS_JSON > .deploy/settings.json
-        env:
-          STAGING_SETTINGS_JSON: ${{ secrets.STAGING_SETTINGS_JSON}}
+      #- name: Create SSH Files
+       # shell: bash -l {0}
+        #run : | mkdir .delploy
+         #      echo "$STAGING_SETTTINGS_JSON > .deploy/settings.json
+        #env:
+         # STAGING_SETTINGS_JSON: ${{ secrets.STAGING_SETTINGS_JSON}}
           
       - run: npm run build --if-present
-      there t- run: npm test
+      - run: npm test
