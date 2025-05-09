@@ -11,6 +11,7 @@ export const Hello = () => {
     <div>
       <button onClick={increment}>Click Me</button>
       <p>You've pressed the button {counter} times.</p>
+	  <p> test pipeline mod </p>
     </div>
   );
 };
